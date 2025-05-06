@@ -1,0 +1,996 @@
+{
+  "nodes": [
+    {
+      "id": "informal dress code"
+    },
+    {
+      "id": "english proficiency (spoken)"
+    },
+    {
+      "id": "english proficiency (written)"
+    },
+    {
+      "id": "5 days a week"
+    },
+    {
+      "id": "effective communication"
+    },
+    {
+      "id": "certificate"
+    },
+    {
+      "id": "ms-excel"
+    },
+    {
+      "id": "free snacks & beverages"
+    },
+    {
+      "id": "letter of recommendation"
+    },
+    {
+      "id": "job offer"
+    },
+    {
+      "id": "sales"
+    },
+    {
+      "id": "ms-office"
+    },
+    {
+      "id": "social media marketing"
+    },
+    {
+      "id": "health insurance"
+    },
+    {
+      "id": "digital marketing"
+    },
+    {
+      "id": "flexible work hours"
+    },
+    {
+      "id": "email marketing"
+    },
+    {
+      "id": "adobe photoshop"
+    },
+    {
+      "id": "search engine optimization (seo)"
+    },
+    {
+      "id": "interpersonal skills"
+    }
+  ],
+  "links": [
+    {
+      "source": "informal dress code",
+      "target": "english proficiency (spoken)",
+      "value": 1570
+    },
+    {
+      "source": "informal dress code",
+      "target": "english proficiency (written)",
+      "value": 1300
+    },
+    {
+      "source": "informal dress code",
+      "target": "5 days a week",
+      "value": 1537
+    },
+    {
+      "source": "informal dress code",
+      "target": "effective communication",
+      "value": 913
+    },
+    {
+      "source": "informal dress code",
+      "target": "certificate",
+      "value": 1307
+    },
+    {
+      "source": "informal dress code",
+      "target": "ms-excel",
+      "value": 816
+    },
+    {
+      "source": "informal dress code",
+      "target": "free snacks & beverages",
+      "value": 1500
+    },
+    {
+      "source": "informal dress code",
+      "target": "letter of recommendation",
+      "value": 1169
+    },
+    {
+      "source": "informal dress code",
+      "target": "job offer",
+      "value": 1100
+    },
+    {
+      "source": "informal dress code",
+      "target": "sales",
+      "value": 509
+    },
+    {
+      "source": "informal dress code",
+      "target": "ms-office",
+      "value": 483
+    },
+    {
+      "source": "informal dress code",
+      "target": "social media marketing",
+      "value": 628
+    },
+    {
+      "source": "informal dress code",
+      "target": "health insurance",
+      "value": 567
+    },
+    {
+      "source": "informal dress code",
+      "target": "digital marketing",
+      "value": 539
+    },
+    {
+      "source": "informal dress code",
+      "target": "flexible work hours",
+      "value": 617
+    },
+    {
+      "source": "informal dress code",
+      "target": "email marketing",
+      "value": 362
+    },
+    {
+      "source": "informal dress code",
+      "target": "adobe photoshop",
+      "value": 336
+    },
+    {
+      "source": "informal dress code",
+      "target": "search engine optimization (seo)",
+      "value": 349
+    },
+    {
+      "source": "informal dress code",
+      "target": "interpersonal skills",
+      "value": 198
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "english proficiency (written)",
+      "value": 2302
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "5 days a week",
+      "value": 1032
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "effective communication",
+      "value": 910
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "certificate",
+      "value": 899
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "ms-excel",
+      "value": 1309
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "free snacks & beverages",
+      "value": 872
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "letter of recommendation",
+      "value": 779
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "job offer",
+      "value": 783
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "sales",
+      "value": 609
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "ms-office",
+      "value": 831
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "social media marketing",
+      "value": 535
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "health insurance",
+      "value": 469
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "digital marketing",
+      "value": 536
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "flexible work hours",
+      "value": 302
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "email marketing",
+      "value": 514
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "adobe photoshop",
+      "value": 43
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "search engine optimization (seo)",
+      "value": 245
+    },
+    {
+      "source": "english proficiency (spoken)",
+      "target": "interpersonal skills",
+      "value": 224
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "5 days a week",
+      "value": 757
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "effective communication",
+      "value": 559
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "certificate",
+      "value": 675
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "ms-excel",
+      "value": 999
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "free snacks & beverages",
+      "value": 714
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "letter of recommendation",
+      "value": 590
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "job offer",
+      "value": 602
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "sales",
+      "value": 287
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "ms-office",
+      "value": 694
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "social media marketing",
+      "value": 593
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "health insurance",
+      "value": 348
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "digital marketing",
+      "value": 566
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "flexible work hours",
+      "value": 245
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "email marketing",
+      "value": 466
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "adobe photoshop",
+      "value": 43
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "search engine optimization (seo)",
+      "value": 339
+    },
+    {
+      "source": "english proficiency (written)",
+      "target": "interpersonal skills",
+      "value": 137
+    },
+    {
+      "source": "5 days a week",
+      "target": "effective communication",
+      "value": 597
+    },
+    {
+      "source": "5 days a week",
+      "target": "certificate",
+      "value": 829
+    },
+    {
+      "source": "5 days a week",
+      "target": "ms-excel",
+      "value": 520
+    },
+    {
+      "source": "5 days a week",
+      "target": "free snacks & beverages",
+      "value": 807
+    },
+    {
+      "source": "5 days a week",
+      "target": "letter of recommendation",
+      "value": 713
+    },
+    {
+      "source": "5 days a week",
+      "target": "job offer",
+      "value": 672
+    },
+    {
+      "source": "5 days a week",
+      "target": "sales",
+      "value": 318
+    },
+    {
+      "source": "5 days a week",
+      "target": "ms-office",
+      "value": 297
+    },
+    {
+      "source": "5 days a week",
+      "target": "social media marketing",
+      "value": 421
+    },
+    {
+      "source": "5 days a week",
+      "target": "health insurance",
+      "value": 473
+    },
+    {
+      "source": "5 days a week",
+      "target": "digital marketing",
+      "value": 397
+    },
+    {
+      "source": "5 days a week",
+      "target": "flexible work hours",
+      "value": 445
+    },
+    {
+      "source": "5 days a week",
+      "target": "email marketing",
+      "value": 229
+    },
+    {
+      "source": "5 days a week",
+      "target": "adobe photoshop",
+      "value": 204
+    },
+    {
+      "source": "5 days a week",
+      "target": "search engine optimization (seo)",
+      "value": 236
+    },
+    {
+      "source": "5 days a week",
+      "target": "interpersonal skills",
+      "value": 147
+    },
+    {
+      "source": "effective communication",
+      "target": "certificate",
+      "value": 476
+    },
+    {
+      "source": "effective communication",
+      "target": "ms-excel",
+      "value": 521
+    },
+    {
+      "source": "effective communication",
+      "target": "free snacks & beverages",
+      "value": 397
+    },
+    {
+      "source": "effective communication",
+      "target": "letter of recommendation",
+      "value": 384
+    },
+    {
+      "source": "effective communication",
+      "target": "job offer",
+      "value": 383
+    },
+    {
+      "source": "effective communication",
+      "target": "sales",
+      "value": 565
+    },
+    {
+      "source": "effective communication",
+      "target": "ms-office",
+      "value": 276
+    },
+    {
+      "source": "effective communication",
+      "target": "social media marketing",
+      "value": 110
+    },
+    {
+      "source": "effective communication",
+      "target": "health insurance",
+      "value": 292
+    },
+    {
+      "source": "effective communication",
+      "target": "digital marketing",
+      "value": 100
+    },
+    {
+      "source": "effective communication",
+      "target": "flexible work hours",
+      "value": 138
+    },
+    {
+      "source": "effective communication",
+      "target": "email marketing",
+      "value": 102
+    },
+    {
+      "source": "effective communication",
+      "target": "adobe photoshop",
+      "value": 17
+    },
+    {
+      "source": "effective communication",
+      "target": "search engine optimization (seo)",
+      "value": 34
+    },
+    {
+      "source": "effective communication",
+      "target": "interpersonal skills",
+      "value": 459
+    },
+    {
+      "source": "certificate",
+      "target": "ms-excel",
+      "value": 452
+    },
+    {
+      "source": "certificate",
+      "target": "free snacks & beverages",
+      "value": 683
+    },
+    {
+      "source": "certificate",
+      "target": "letter of recommendation",
+      "value": 1824
+    },
+    {
+      "source": "certificate",
+      "target": "job offer",
+      "value": 1713
+    },
+    {
+      "source": "certificate",
+      "target": "sales",
+      "value": 233
+    },
+    {
+      "source": "certificate",
+      "target": "ms-office",
+      "value": 280
+    },
+    {
+      "source": "certificate",
+      "target": "social media marketing",
+      "value": 459
+    },
+    {
+      "source": "certificate",
+      "target": "digital marketing",
+      "value": 382
+    },
+    {
+      "source": "certificate",
+      "target": "flexible work hours",
+      "value": 842
+    },
+    {
+      "source": "certificate",
+      "target": "email marketing",
+      "value": 233
+    },
+    {
+      "source": "certificate",
+      "target": "adobe photoshop",
+      "value": 214
+    },
+    {
+      "source": "certificate",
+      "target": "search engine optimization (seo)",
+      "value": 255
+    },
+    {
+      "source": "certificate",
+      "target": "interpersonal skills",
+      "value": 121
+    },
+    {
+      "source": "ms-excel",
+      "target": "free snacks & beverages",
+      "value": 403
+    },
+    {
+      "source": "ms-excel",
+      "target": "letter of recommendation",
+      "value": 379
+    },
+    {
+      "source": "ms-excel",
+      "target": "job offer",
+      "value": 378
+    },
+    {
+      "source": "ms-excel",
+      "target": "sales",
+      "value": 224
+    },
+    {
+      "source": "ms-excel",
+      "target": "ms-office",
+      "value": 727
+    },
+    {
+      "source": "ms-excel",
+      "target": "social media marketing",
+      "value": 175
+    },
+    {
+      "source": "ms-excel",
+      "target": "health insurance",
+      "value": 230
+    },
+    {
+      "source": "ms-excel",
+      "target": "digital marketing",
+      "value": 204
+    },
+    {
+      "source": "ms-excel",
+      "target": "flexible work hours",
+      "value": 148
+    },
+    {
+      "source": "ms-excel",
+      "target": "email marketing",
+      "value": 269
+    },
+    {
+      "source": "ms-excel",
+      "target": "adobe photoshop",
+      "value": 13
+    },
+    {
+      "source": "ms-excel",
+      "target": "search engine optimization (seo)",
+      "value": 18
+    },
+    {
+      "source": "ms-excel",
+      "target": "interpersonal skills",
+      "value": 164
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "letter of recommendation",
+      "value": 608
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "job offer",
+      "value": 564
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "sales",
+      "value": 211
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "ms-office",
+      "value": 273
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "social media marketing",
+      "value": 302
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "health insurance",
+      "value": 377
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "digital marketing",
+      "value": 264
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "flexible work hours",
+      "value": 304
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "email marketing",
+      "value": 172
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "adobe photoshop",
+      "value": 152
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "search engine optimization (seo)",
+      "value": 164
+    },
+    {
+      "source": "free snacks & beverages",
+      "target": "interpersonal skills",
+      "value": 98
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "job offer",
+      "value": 1506
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "sales",
+      "value": 216
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "ms-office",
+      "value": 232
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "social media marketing",
+      "value": 407
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "digital marketing",
+      "value": 342
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "flexible work hours",
+      "value": 766
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "email marketing",
+      "value": 211
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "adobe photoshop",
+      "value": 189
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "search engine optimization (seo)",
+      "value": 213
+    },
+    {
+      "source": "letter of recommendation",
+      "target": "interpersonal skills",
+      "value": 95
+    },
+    {
+      "source": "job offer",
+      "target": "sales",
+      "value": 199
+    },
+    {
+      "source": "job offer",
+      "target": "ms-office",
+      "value": 233
+    },
+    {
+      "source": "job offer",
+      "target": "social media marketing",
+      "value": 386
+    },
+    {
+      "source": "job offer",
+      "target": "digital marketing",
+      "value": 320
+    },
+    {
+      "source": "job offer",
+      "target": "flexible work hours",
+      "value": 663
+    },
+    {
+      "source": "job offer",
+      "target": "email marketing",
+      "value": 200
+    },
+    {
+      "source": "job offer",
+      "target": "adobe photoshop",
+      "value": 182
+    },
+    {
+      "source": "job offer",
+      "target": "search engine optimization (seo)",
+      "value": 220
+    },
+    {
+      "source": "job offer",
+      "target": "interpersonal skills",
+      "value": 110
+    },
+    {
+      "source": "sales",
+      "target": "ms-office",
+      "value": 86
+    },
+    {
+      "source": "sales",
+      "target": "social media marketing",
+      "value": 73
+    },
+    {
+      "source": "sales",
+      "target": "health insurance",
+      "value": 215
+    },
+    {
+      "source": "sales",
+      "target": "digital marketing",
+      "value": 80
+    },
+    {
+      "source": "sales",
+      "target": "flexible work hours",
+      "value": 90
+    },
+    {
+      "source": "sales",
+      "target": "email marketing",
+      "value": 100
+    },
+    {
+      "source": "sales",
+      "target": "adobe photoshop",
+      "value": 3
+    },
+    {
+      "source": "sales",
+      "target": "search engine optimization (seo)",
+      "value": 8
+    },
+    {
+      "source": "sales",
+      "target": "interpersonal skills",
+      "value": 157
+    },
+    {
+      "source": "ms-office",
+      "target": "social media marketing",
+      "value": 45
+    },
+    {
+      "source": "ms-office",
+      "target": "health insurance",
+      "value": 138
+    },
+    {
+      "source": "ms-office",
+      "target": "digital marketing",
+      "value": 87
+    },
+    {
+      "source": "ms-office",
+      "target": "flexible work hours",
+      "value": 92
+    },
+    {
+      "source": "ms-office",
+      "target": "email marketing",
+      "value": 134
+    },
+    {
+      "source": "ms-office",
+      "target": "adobe photoshop",
+      "value": 28
+    },
+    {
+      "source": "ms-office",
+      "target": "search engine optimization (seo)",
+      "value": 6
+    },
+    {
+      "source": "ms-office",
+      "target": "interpersonal skills",
+      "value": 66
+    },
+    {
+      "source": "social media marketing",
+      "target": "health insurance",
+      "value": 83
+    },
+    {
+      "source": "social media marketing",
+      "target": "digital marketing",
+      "value": 723
+    },
+    {
+      "source": "social media marketing",
+      "target": "flexible work hours",
+      "value": 211
+    },
+    {
+      "source": "social media marketing",
+      "target": "email marketing",
+      "value": 399
+    },
+    {
+      "source": "social media marketing",
+      "target": "adobe photoshop",
+      "value": 54
+    },
+    {
+      "source": "social media marketing",
+      "target": "search engine optimization (seo)",
+      "value": 450
+    },
+    {
+      "source": "social media marketing",
+      "target": "interpersonal skills",
+      "value": 38
+    },
+    {
+      "source": "health insurance",
+      "target": "digital marketing",
+      "value": 87
+    },
+    {
+      "source": "health insurance",
+      "target": "email marketing",
+      "value": 64
+    },
+    {
+      "source": "health insurance",
+      "target": "adobe photoshop",
+      "value": 44
+    },
+    {
+      "source": "health insurance",
+      "target": "search engine optimization (seo)",
+      "value": 36
+    },
+    {
+      "source": "health insurance",
+      "target": "interpersonal skills",
+      "value": 76
+    },
+    {
+      "source": "digital marketing",
+      "target": "flexible work hours",
+      "value": 187
+    },
+    {
+      "source": "digital marketing",
+      "target": "email marketing",
+      "value": 413
+    },
+    {
+      "source": "digital marketing",
+      "target": "adobe photoshop",
+      "value": 33
+    },
+    {
+      "source": "digital marketing",
+      "target": "search engine optimization (seo)",
+      "value": 452
+    },
+    {
+      "source": "digital marketing",
+      "target": "interpersonal skills",
+      "value": 36
+    },
+    {
+      "source": "flexible work hours",
+      "target": "email marketing",
+      "value": 96
+    },
+    {
+      "source": "flexible work hours",
+      "target": "adobe photoshop",
+      "value": 90
+    },
+    {
+      "source": "flexible work hours",
+      "target": "search engine optimization (seo)",
+      "value": 110
+    },
+    {
+      "source": "flexible work hours",
+      "target": "interpersonal skills",
+      "value": 31
+    },
+    {
+      "source": "email marketing",
+      "target": "adobe photoshop",
+      "value": 23
+    },
+    {
+      "source": "email marketing",
+      "target": "search engine optimization (seo)",
+      "value": 237
+    },
+    {
+      "source": "email marketing",
+      "target": "interpersonal skills",
+      "value": 29
+    },
+    {
+      "source": "adobe photoshop",
+      "target": "search engine optimization (seo)",
+      "value": 30
+    },
+    {
+      "source": "adobe photoshop",
+      "target": "interpersonal skills",
+      "value": 1
+    },
+    {
+      "source": "search engine optimization (seo)",
+      "target": "interpersonal skills",
+      "value": 4
+    }
+  ]
+}

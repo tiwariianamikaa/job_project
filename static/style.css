@@ -1,0 +1,583 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1d4ed8;
+  }
+  
+  .main-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #1d4ed8;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .login:hover {
+    background-color: #2563eb;
+  }
+  
+  .register {
+    background-color: #fb923c;
+    color: white;
+  }
+  
+  .register:hover {
+    background-color: #f97316;
+  }
+  
+  .scan {
+    background-color: #10b981;
+    color: white;
+    margin: 20px auto 0;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .scan:hover {
+    background-color: #059669;
+  }
+  
+  
+  .scan:hover {
+    background-color: #059669;
+  }
+  
+  /* Background with Image */
+  .background-section {
+    background-image: url("https://static.naukimg.com/s/0/0/i/role-collection-ot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Upload Box */
+  .upload-box {
+    position: absolute;
+    top: 50px;
+    right: 50px; /* Adjusted slightly for balance */
+    background: rgba(255, 255, 255, 0.95);
+    padding: 48px; /* Increased padding slightly */
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+    max-width: 620px; /* Increased width */
+    width: 100%;
+    min-height: 400px; /* Increased height */
+  }
+  
+  
+  
+  .upload-box h2 {
+    font-family: 'Inter', sans-serif;  /* Use Inter for a modern, professional look */
+    font-size: 28px;                   /* Slightly larger for prominence */
+    font-weight: 600;                  /* Medium-bold */
+    margin-bottom: 20px;
+    color: #1f2937;                    /* Dark neutral for readability */
+    text-align: center;
+  }
+  
+  
+  input[type="file"] {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+    width: 100%;
+    background: white;
+    cursor: pointer;
+  }
+  
+  /* Scan status & progress */
+  .scan-status {
+    margin-top: 15px;
+    color: #1d4ed8;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .progress-container {
+    width: 100%;
+    margin: 20px 0;
+    background: #e5e7eb;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #10b981;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* Filters */
+  .filters {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .filters h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1f2937;
+    text-align: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tab {
+    padding: 12px 24px;
+    background: #f3f4f6;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .tab:hover {
+    background: #e0e7ff;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #e5e7eb;
+    color: #4b5563;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 1px solid #d1d5db;
+  }
+  
+  /* Utility */
+  .hidden {
+    display: none;
+  }
+  
+  /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.logo span {
+  color: #111827;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1d4ed8;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: linear-gradient(to right, #eff6ff, #f0fdf4);
+  min-height: 90vh;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #4b5563;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.search-bar button:hover {
+  background-color: #1d4ed8;
+}
+
+.hero-image img {
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 14px;
+}
+
+.footer-left a,
+.footer-right a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer-right img {
+  margin-right: 10px;
+}
+
+/* Header Section */
+.navbar {
+    background-color: #ffffff; /* White background */
+    color: #000000;            /* Default text color black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000; /* Black logo text */
+  }
+  
+  .logo span {
+    color: #000000; /* Keep consistent with logo */
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000000; /* Black link text */
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #1d4ed8; /* Optional hover color */
+  }
+
+/* Button styles in nav */
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  /* Blue Login Button */
+  .login-btn {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .login-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Orange Register Button */
+  .register-btn {
+    background-color: #fb923c;
+    color: white;
+  }
+  
+  .register-btn:hover {
+    background-color: #f97316;
+  }
+
+  .upload-box {
+    text-align: center;
+  }
+  
+  .upload-box input[type="file"],
+  .upload-box .btn.scan {
+    display: block;
+    margin: 20px auto;
+  }
+/* Navigation container */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* spacing between items */
+  }
+  
+  /* Navigation links */
+  .nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #1d4ed8; /* blue on hover */
+  }
+  
+  /* Login and Register buttons */
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Blue Login Button */
+  .login {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .login:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Orange Register Button */
+  .register {
+    background-color: #fb923c;
+    color: white;
+  }
+  
+  .register:hover {
+    background-color: #f97316;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 40px;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-image {
+    flex: 1.2; /* More space for image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 580px;   /* Slightly smaller width */
+    height: 400px;      /* Slightly smaller height */
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+  }
+  .search-bar {
+    position: relative;
+  }
+  
+  .suggestions-box {
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .suggestions-box {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .suggestion {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background-color: #f0f0f0;
+  }
+  #suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  #suggestions li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  #suggestions li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

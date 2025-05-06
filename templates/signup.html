@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobJunction - Create Your Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #3f51b5;
+      --secondary-color: #2c387e;
+      --accent-color: #4caf50;
+      --text-color: #2d3748;
+      --light-gray: #f7fafc;
+      --white: #ffffff;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --error-color: #e53e3e;
+      --success-color: #38a169;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text-color);
+      background-image: url("/static/images/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.4);
+      z-index: -1;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 1000;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo span {
+      color: var(--secondary-color);
+      margin-left: 4px;
+    }
+    
+    .logo i {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+    
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-links a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
+    
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary-color);
+      transition: width 0.3s ease;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--white);
+      min-width: 280px;
+      box-shadow: var(--shadow);
+      border-radius: 6px;
+      z-index: 1;
+      padding: 10px 0;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .dropdown-content a {
+      color: var(--text-color);
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: var(--light-gray);
+      color: var(--primary-color);
+      padding-left: 25px;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s;
+      margin-left: 10px;
+    }
+    
+    .login-btn {
+      background-color: transparent;
+      color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+    }
+    
+    .login-btn:hover {
+      background-color: rgba(63, 81, 181, 0.1);
+    }
+    
+    .register-btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: 1px solid var(--primary-color);
+    }
+    
+    .register-btn:hover {
+      background-color: var(--secondary-color);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+    
+    /* Registration Page Specific Styles */
+    .register-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      padding: 40px 20px;
+    }
+    
+    .register-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      padding: 40px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      animation: fadeIn 0.5s ease-out;
+      box-sizing: border-box;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .register-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .register-header h2 {
+      font-size: 28px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+    
+    .register-header p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--text-color);
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: all 0.3s;
+      box-sizing: border-box;
+    }
+    
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.1);
+      outline: none;
+    }
+    
+    .input-with-icon {
+      position: relative;
+      width: 100%;
+    }
+    
+    .input-with-icon i {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      color: #a0aec0;
+    }
+    
+    .input-with-icon input {
+      padding-left: 40px;
+      width: calc(100% - 40px);
+    }
+    
+    .password-strength {
+      margin-top: 8px;
+      height: 4px;
+      background-color: #e2e8f0;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    
+    .strength-meter {
+      height: 100%;
+      width: 0;
+      transition: width 0.3s, background-color 0.3s;
+    }
+    
+    .password-requirements {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+    
+    .requirement {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    
+    .requirement i {
+      margin-right: 6px;
+      font-size: 12px;
+    }
+    
+    .requirement.valid {
+      color: var(--success-color);
+    }
+    
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 10px;
+    }
+    
+    .submit-btn:hover {
+      background-color: var(--secondary-color);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+    
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      width: 100%;
+    }
+    
+    .login-link a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    
+    .login-link a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+    
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      margin-top: auto;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    
+    .footer a:hover {
+      color: #a0aec0;
+    }
+    
+    .footer-right a {
+      margin: 0 8px;
+      font-size: 16px;
+    }
+    
+    .error-message {
+      color: var(--error-color);
+      font-size: 14px;
+      margin-top: 5px;
+      display: none;
+    }
+    
+    .success-message {
+      color: var(--success-color);
+      font-size: 14px;
+      margin-top: 5px;
+      display: none;
+    }
+    
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .modal-content {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .modal-content h3 {
+      margin-bottom: 15px;
+    }
+    
+    .modal-content p {
+      margin-bottom: 20px;
+      color: var(--text-color);
+    }
+    
+    .modal-btn {
+      padding: 8px 20px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .modal-btn:hover {
+      background-color: var(--secondary-color);
+    }
+    
+    .two-column {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .two-column .form-group {
+      flex: 1;
+    }
+    
+    @media (max-width: 600px) {
+      .two-column {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+  </style>
+
+<style>
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    img, #timelinePlot {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    body {
+        font-size: 0.9rem;
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><i class="fas fa-briefcase"></i>Job<span>Junction</span></div>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/upload">Upload CV</a>
+          <div class="dropdown">
+            <a href="#">Analysis <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="/skills-demand"><i class="fas fa-chart-line"></i> Skill Demand Analysis</a>
+              <a href="/salary-experience"><i class="fas fa-money-bill-wave"></i> Salary Distribution by Company</a>
+              <a href="/company-trends"><i class="fas fa-building"></i> Company Hiring Trends</a>
+              <a href="/city-jobs-visualization"><i class="fas fa-calendar-alt"></i> City-Jobs</a>
+              
+            </div>
+          </div>
+          <a href="/login">Login</a>
+          <a href="/signup" >Sign Up</a>      
+        </nav>    
+      </header>
+
+  <div class="register-container">
+    <div class="register-box">
+      <div class="register-header">
+        <h2>Create Your Account</h2>
+        <p>Join JobJunction to find your dream career</p>
+      </div>
+      
+      <form id="registerForm">
+        <div class="two-column">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" class="form-control" placeholder="Enter your first name" required>
+            <div id="firstNameError" class="error-message">Please enter your first name</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" class="form-control" placeholder="Enter your last name" required>
+            <div id="lastNameError" class="error-message">Please enter your last name</div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <div id="emailError" class="error-message">Please enter a valid email address</div>
+          <div id="emailExistsError" class="error-message">This email is already registered</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" class="form-control" placeholder="Create a password" required>
+          </div>
+          <div class="password-strength">
+            <div id="strengthMeter" class="strength-meter"></div>
+          </div>
+          <div class="password-requirements">
+            <div id="lengthReq" class="requirement">
+              <i class="fas fa-circle"></i> At least 8 characters
+            </div>
+            <div id="upperReq" class="requirement">
+              <i class="fas fa-circle"></i> At least 1 uppercase letter
+            </div>
+            <div id="lowerReq" class="requirement">
+              <i class="fas fa-circle"></i> At least 1 lowercase letter
+            </div>
+            <div id="numberReq" class="requirement">
+              <i class="fas fa-circle"></i> At least 1 number
+            </div>
+            <div id="specialReq" class="requirement">
+              <i class="fas fa-circle"></i> At least 1 special character
+            </div>
+          </div>
+          <div id="passwordError" class="error-message">Password must meet all requirements</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+          </div>
+          <div id="confirmPasswordError" class="error-message">Passwords do not match</div>
+        </div>
+        
+        <div class="form-group">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+          <div id="termsError" class="error-message">You must agree to the terms</div>
+        </div>
+        
+        <button type="submit" class="submit-btn">Create Account</button>
+        
+        <div class="login-link">
+          Already have an account? <a href="/login">Log in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <h3 style="color: var(--success-color);">Registration Successful!</h3>
+      <p>Your account has been created successfully. You can now log in to access your dashboard.</p>
+      <button class="modal-btn" onclick="redirectToLogin()">Continue to Login</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <a href="#">About Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    const termsChecked = document.getElementById('terms').checked;
+    
+    // Reset error messages
+    document.getElementById('firstNameError').style.display = 'none';
+    document.getElementById('lastNameError').style.display = 'none';
+    document.getElementById('emailError').style.display = 'none';
+    document.getElementById('emailExistsError').style.display = 'none';
+    document.getElementById('passwordError').style.display = 'none';
+    document.getElementById('confirmPasswordError').style.display = 'none';
+    document.getElementById('termsError').style.display = 'none';
+    
+    let isValid = true;
+    
+    // Validate first name
+    if (!firstName) {
+        document.getElementById('firstNameError').style.display = 'block';
+        isValid = false;
+    }
+    
+    // Validate last name
+    if (!lastName) {
+        document.getElementById('lastNameError').style.display = 'block';
+        isValid = false;
+    }
+    
+    // Validate email
+    if (!validateEmail(email)) {
+        document.getElementById('emailError').style.display = 'block';
+        isValid = false;
+    }
+    
+    // Validate password
+    const passwordRequirements = checkPasswordStrength(password);
+    const passwordValid = Object.values(passwordRequirements).every(Boolean);
+    
+    if (!passwordValid) {
+        document.getElementById('passwordError').style.display = 'block';
+        isValid = false;
+    }
+    
+    // Validate confirm password
+    if (password !== confirmPassword) {
+        document.getElementById('confirmPasswordError').style.display = 'block';
+        isValid = false;
+    }
+    
+    // Validate terms
+    if (!termsChecked) {
+        document.getElementById('termsError').style.display = 'block';
+        isValid = false;
+    }
+    
+    if (isValid) {
+        try {
+            const response = await fetch('/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    password: password
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (data.success) {
+                document.getElementById('successModal').style.display = 'flex';
+            } else {
+                if (data.message === 'Email already registered') {
+                    document.getElementById('emailExistsError').style.display = 'block';
+                } else {
+                    alert('Registration failed: ' + data.message);
+                }
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred during registration');
+        }
+    }
+});
+  </script>
+</body>
+</html>
